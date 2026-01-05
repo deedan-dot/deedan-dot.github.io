@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <title>Daviscore Lente | Live Scores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>⚽ DAVISCORE LENTE</h1>
+  <p>Live Scores • Results • Fixtures</p>
+</header>
+
+<!-- ===== TEAMS SECTION ===== -->
+<section class="teams">
+  <h2>Timu Kubwa Duniani</h2>
+
+  <div class="teams-container">
+
+    <div class="team-card" onclick="openTeam('Real Madrid')">
+      <div class="team-bg" style="background-image:url('https://i.imgur.com/1pJzY9q.jpg')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg">
+        <h3>Real Madrid</h3>
+      </div>
+    </div>
+
+    <div class="team-card" onclick="openTeam('Barcelona')">
+      <div class="team-bg" style="background-image:url('https://i.imgur.com/NTp6zqz.jpg')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg">
+        <h3>Barcelona</h3>
+      </div>
+    </div>
+
+    <div class="team-card" onclick="openTeam('Manchester United')">
+      <div class="team-bg" style="background-image:url('https://i.imgur.com/OU5k1dE.jpg')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg">
+        <h3>Man United</h3>
+      </div>
+    </div>
+
+    <div class="team-card" onclick="openTeam('Arsenal')">
+      <div class="team-bg" style="background-image:url('https://i.imgur.com/RY3M6fC.jpg')">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg">
+        <h3>Arsenal</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== LIVE SCORE SECTION ===== -->
+<section class="livescore">
+  <h2>🔴 Live Matches & Results</h2>
+
+  <!-- FREE LIVE SCORE WIDGET -->
+  <iframe 
+    src="https://livescore.soccersapi.com/livescore-widget"
+    width="100%"
+    height="500"
+    frameborder="0">
+  </iframe>
+</section>
+
+<footer>
+  <p>© 2026 Daviscore Lente</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
