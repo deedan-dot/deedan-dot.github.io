@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1320;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* TEAMS */
+.teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.team-card {
+  width: 250px;
+  cursor: pointer;
+}
+
+.team-bg {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.team-bg img {
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.team-bg h3 {
+  margin: 8px 0 0;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* LIVE SCORE */
+.livescore iframe {
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #111827;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .team-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    width: 90%;
+  }
+}
